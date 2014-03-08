@@ -385,19 +385,19 @@ footer div.mid {
 }
 
 .col.cardgeneral tr th {
-  background: #428BCA;
+  background: #446e9b;
 }
 
 .col.cardread tr th /*, p.cardread span*/ {
-  background: #5CB85C;
+  background: #3cb521;
 }
 
 .col.cardwrite tr th {
-  background: #c78f41;
+  background: #d47500;
 }
 
 .col.cardperformance tr th {
-  background: #5BC0DE;
+  background: #3399f3;
 }
 
 .col.carddeprecation tr th {
