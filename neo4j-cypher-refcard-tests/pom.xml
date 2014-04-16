@@ -64,17 +64,6 @@
       <groupId>org.neo4j</groupId>
       <version>${neo4j.version}</version>
     </dependency>
-      <!--<dependency>-->
-          <!--<groupId>org.scalatest</groupId>-->
-          <!--<artifactId>scalatest_2.10</artifactId>-->
-          <!--<scope>test</scope>-->
-          <!--<exclusions>-->
-              <!--<exclusion>-->
-                  <!--<artifactId>scala-library</artifactId>-->
-                  <!--<groupId>org.scala-lang</groupId>-->
-              <!--</exclusion>-->
-          <!--</exclusions>-->
-      <!--</dependency>-->
     <dependency>
       <groupId>org.neo4j</groupId>
       <artifactId>neo4j-kernel</artifactId>
@@ -113,6 +102,66 @@
       </exclusions>
     </dependency>
   </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <artifactId>neo4j-cypher</artifactId>
+        <groupId>org.neo4j</groupId>
+        <version>${neo4j.version}</version>
+      </dependency>
+      <dependency>
+        <artifactId>neo4j-cypher</artifactId>
+        <groupId>org.neo4j</groupId>
+        <version>${neo4j.version}</version>
+        <type>test-jar</type>
+      </dependency>
+      <dependency>
+        <artifactId>neo4j-cypher-docs</artifactId>
+        <groupId>org.neo4j</groupId>
+        <version>${neo4j.version}</version>
+        <type>test-jar</type>
+      </dependency>
+      <dependency>
+        <artifactId>neo4j-cypher-docs</artifactId>
+        <groupId>org.neo4j</groupId>
+        <version>${neo4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.neo4j</groupId>
+        <artifactId>neo4j-kernel</artifactId>
+        <version>${neo4j.version}</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.neo4j</groupId>
+        <artifactId>neo4j-graphviz</artifactId>
+        <version>${neo4j.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.neo4j</groupId>
+        <artifactId>neo4j-kernel</artifactId>
+        <version>${neo4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.neo4j</groupId>
+        <artifactId>neo4j-lucene-index</artifactId>
+        <version>${neo4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.neo4j</groupId>
+        <artifactId>neo4j-graph-matching</artifactId>
+        <version>${neo4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.neo4j</groupId>
+        <artifactId>neo4j-graph-algo</artifactId>
+        <version>${neo4j.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <build>
     <plugins>
