@@ -44,7 +44,9 @@ include::../../neo4j-cypher-refcard-tests/target/docs/dev/ql/refcard/with.asciid
 
 include::../../neo4j-cypher-refcard-tests/target/docs/dev/ql/refcard/union.asciidoc[]
 
-.Write-Only Query Structure 
+include::../../neo4j-cypher-refcard-tests/target/docs/dev/ql/refcard/unwind.asciidoc[]
+
+.Write-Only Query Structure
 ["refcard", cardcss="write c2-2 c4-4 c5-5 c6-3"]
 ----
 (CREATE [UNIQUE] | MERGE)*
